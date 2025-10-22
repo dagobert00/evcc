@@ -92,7 +92,7 @@ params:
         Then execute the following to get an oauth token (n.b. it's best to paste the entire block as-is, since the intermediate 'CODE' is only valid for 20 seconds):
 
         ```
-        VIESSMANN_REDIRECT_URI="http://localhost:4200/"
+        VIESSMANN_REDIRECT_URI="vicare://oauth-callback/everest"
         VIESSMANN_CODE_CHALLENGE="5M5nhkBfkWZCGfLZYcTL-l7esjPUN7PpZ4rq8k4cmys"
         VIESSMANN_CODE_VERIFIER="6PygdmeK8JKPuuftlkc6q4ceyvjhMM_a_cJrPbcmcLc-SPjx2ZXTYr-SOofPUBydQ3McNYRy7Hibc2L2WtVLJFpOQ~Qbgic455ArKjUz9_UiTLnO6q8A3e.I_fIF8hAo"
 
@@ -129,6 +129,8 @@ params:
       de: normalerweise `0`
       en: typically `0`
     default: 0
+  - name: redirectURI
+    required: false
   - name: target_temperature
     deprecated: true
     description:
