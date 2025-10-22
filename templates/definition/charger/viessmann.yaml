@@ -129,8 +129,6 @@ params:
       de: normalerweise `0`
       en: typically `0`
     default: 0
-  - name: redirectURI
-    required: false
   - name: target_temperature
     deprecated: true
     description:
